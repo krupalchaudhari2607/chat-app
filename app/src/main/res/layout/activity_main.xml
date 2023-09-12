@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="30dp"
+    android:background="@color/white"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    tools:context=".MainActivity">
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="@color/purple_500"-->
+    <!--        android:gravity="center"-->
+    <!--        android:paddingLeft="15dp"-->
+    <!--        android:paddingTop="10dp"-->
+    <!--        android:paddingRight="10dp"-->
+    <!--        android:paddingBottom="15dp"-->
+    <!--        android:text="Hello Roni"-->
+    <!--        android:textColor="#FF5722"-->
+    <!--        android:textSize="20dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.347" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/domagic"-->
+    <!--        android:layout_width="100dp"-->
+    <!--        android:layout_height="100dp"-->
+    <!--        android:background="@drawable/buttonsource"-->
+    <!--        android:text="Do Your Magic"-->
+    <!--        app:backgroundTint="#952323"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.527"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.499" />-->
+    <!--    Buttons-->
+
+    <!--    <ToggleButton-->
+    <!--        android:id="@+id/toggleButton"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="toggleButton"-->
+    <!--        android:textOff="Invisible"-->
+    <!--        android:textOn="Visible" />-->
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitStart"
+        tools:srcCompat="@drawable/roni" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="Select A Country" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_horizontal"
+        android:text="Result "
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Please Enter Your Name"
+        android:inputType="textPersonName" />
+
+    <!--    <RadioGroup-->
+    <!--        android:id="@+id/rgroup"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="160dp"-->
+    <!--        android:layout_marginTop="30dp"-->
+    <!--        android:layout_marginBottom="0dp"-->
+    <!--        android:gravity="center_horizontal">-->
+
+    <!--        <RadioButton-->
+    <!--            android:id="@+id/green"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:gravity="center_horizontal"-->
+    <!--            android:text="Green" />-->
+
+    <!--        <RadioButton-->
+    <!--            android:id="@+id/red"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:gravity="center_horizontal"-->
+    <!--            android:text="Red" />-->
+
+    <!--        <RadioButton-->
+    <!--            android:id="@+id/orange"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginBottom="0dp"-->
+    <!--            android:gravity="center_horizontal"-->
+    <!--            android:text="Yellow" />-->
+    <!--    </RadioGroup>-->
+
+    <!--    <CheckBox-->
+    <!--        android:id="@+id/checkBox"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="30dp"-->
+    <!--        android:checked="false"-->
+    <!--        android:clickable="false"-->
+    <!--        android:gravity="center_horizontal"-->
+    <!--        android:paddingLeft="60dp"-->
+    <!--        android:paddingRight="60dp"-->
+    <!--        android:text="Are You Sure Want To See Your Image And Name???" />-->
+
+    <Button
+        android:id="@+id/press"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Please Press" />
+
+</LinearLayout>
